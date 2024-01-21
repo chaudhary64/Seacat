@@ -37,9 +37,26 @@
             <video class="video2 absolute h-[100vh] scale-[2] right-[50vw]" src="ship.webm" autoplay muted loop></video>
         </div>
         <!-- Lights On -->
-        <div class="h-[10%] w-[40%] bg-yellow-300 absolute left-[40%] bottom-[30%] z-[99]"></div>
+        <div class="Light_Container h-[10%] w-[20%] absolute left-[42%] bottom-[30%] z-[999999]">
+            <div class="lights h-[9vh] w-[9vh] relative top-1/2 -translate-y-1/2 rounded-full z-[9999] flex justify-center items-center overflow-hidden">
+                <div class="Runner h-[140%] w-[60%] bg-[#FF7300] absolute translate-x-[35%]"></div>
+                <div class="h-[93%] w-[93%] rounded-full bg-black absolute flex justify-center items-center">
+                    <i class="ri-arrow-right-double-line text-white"></i>
+                </div>
+            </div>
+            <div class="absolute z-[-1] top-1/2 left-[30%] -translate-y-1/2 text-sm">
+                <p class="Slider select-none text-gray-300">Turn on the lights</p>
+                <p class="Dots select-none text-gray-300 absolute z-[-1] left-0">. . . . . . . . . . . . . . . . </p>
+            </div>
+            <div
+                class="h-[5vh] w-[5vh] rounded-full absolute z-[-1] right-0 top-1/2 -translate-x-1/2 -translate-y-1/2 select-none flex justify-center items-center overflow-hidden">
+                <div class="h-[150%] w-[60%] bg-white absolute z-[-1] translate-x-[35%] rotate-[-19deg]"></div>
+                <div class="h-[86%] w-[86%] rounded-full bg-black absolute flex justify-center items-center"><i
+                        class="ri-play-mini-fill text-red-500"></i></div>
+            </div>
+        </div>
         <!-- Footer -->
-        <footer class="h-[30%] w-full border-2 border-white absolute bottom-0 z-[99] flex justify-center select-none">
+        <footer class="h-[30%] w-full absolute bottom-0 z-[99] flex justify-center select-none">
             <div class="h-full w-[20%] flex justify-center py-[4%]">
                 <p class="text-3xl text-gray-300">HIBERNATION</p>
             </div>
@@ -52,6 +69,12 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"
+        integrity="sha512-G7Wpe/pbg+zjyyM9HgQY6kacLAy+580lmA8DUXmZtioTI5FkaCRoLOaCLoeblrZABs7KZFD03cfSV9j7nmwxfw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 

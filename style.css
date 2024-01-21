@@ -10,46 +10,67 @@ body {
     width: 100%;
 }
 
-.video2{
+.video2 {
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
 
-.Colors{
+.Colors {
     height: 130%;
     width: 50%;
     position: absolute;
 }
 
-.Red{
+.Red {
     background-color: red;
     transform-origin: center;
     animation: rotateRed 10s linear infinite;
 }
 
-.Blue{
+.Blue {
     background-color: blue;
     transform-origin: center;
     transform: rotate(90deg);
     animation: rotateBlue 10s linear infinite;
-}  
-
-@keyframes rotateRed{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-    
 }
 
-@keyframes rotateBlue{
-    0%{
+@keyframes rotateRed {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes rotateBlue {
+    0% {
         transform: rotate(90deg);
     }
-    100%{
+
+    100% {
         transform: rotate(450deg);
     }
-    
+
+}
+
+.Runner {
+    transform-origin: center;
+    animation-name: rotateRunner;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotateRunner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
 }
