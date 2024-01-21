@@ -14,3 +14,42 @@ body {
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
+
+.Colors{
+    height: 130%;
+    width: 50%;
+    position: absolute;
+}
+
+.Red{
+    background-color: red;
+    transform-origin: center;
+    animation: rotateRed 10s linear infinite;
+}
+
+.Blue{
+    background-color: blue;
+    transform-origin: center;
+    transform: rotate(90deg);
+    animation: rotateBlue 10s linear infinite;
+}  
+
+@keyframes rotateRed{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes rotateBlue{
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(450deg);
+    }
+    
+}
