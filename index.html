@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="Main h-screen w-full bg-yellow-300 overflow-hidden">
+    <div class="Main h-screen w-full bg-yellow-300 relative overflow-hidden">
+        <nav class="h-[10%] w-full bg-yellow-700 absolute z-[99] top-[5.5%] px-[3%] flex justify-between items-center">
+            <div class="left-part">
+                <p>ROSSINAVI</p>
+                <p>BLUE EXPERIENCE</p>
+            </div>
+            <div class="center-part h-full flex justify-between items-center">
+                <img class="h-[75%]" src="logo/logo-seacat.png" alt="">
+            </div>
+            <div class="right-part h-[10vh] w-[10vh]  bg-red-500"></div>
+        </nav>
         <div class="videodiv relative">
             <video class="video1 absolute h-[100vh] scale-[2] left-[50vw]" src="ship.webm" autoplay muted loop></video>
             <video class="video2 absolute h-[100vh] scale-[2] right-[50vw]" src="ship.webm" autoplay muted loop></video>
@@ -16,4 +28,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
