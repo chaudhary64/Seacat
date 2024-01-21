@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Favicon/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
@@ -37,17 +41,22 @@
             <video class="video2 absolute h-[100vh] scale-[2] right-[50vw]" src="ship.webm" autoplay muted loop></video>
         </div>
         <!-- Lights On -->
-        <div class="Light_Container h-[10%] w-[20%] absolute left-[42%] bottom-[30%] z-[999999]">
-            <div class="lights h-[9vh] w-[9vh] relative top-1/2 -translate-y-1/2 rounded-full z-[9999] flex justify-center items-center overflow-hidden">
+        <div class="Light_Container h-[10%] w-[20%] absolute left-[42%] bottom-[30%] z-[999999] overflow-hidden">
+            <!-- LightDragger -->
+            <div
+                class="lights h-[9vh] w-[9vh] relative top-1/2 -translate-y-1/2 rounded-full z-[9999] flex justify-center items-center overflow-hidden">
                 <div class="Runner h-[140%] w-[60%] bg-[#FF7300] absolute translate-x-[35%]"></div>
                 <div class="h-[93%] w-[93%] rounded-full bg-black absolute flex justify-center items-center">
                     <i class="ri-arrow-right-double-line text-white"></i>
                 </div>
+
             </div>
+            <!-- Text present in between-->
             <div class="absolute z-[-1] top-1/2 left-[30%] -translate-y-1/2 text-sm">
                 <p class="Slider select-none text-gray-300">Turn on the lights</p>
                 <p class="Dots select-none text-gray-300 absolute z-[-1] left-0">. . . . . . . . . . . . . . . . </p>
             </div>
+            <!-- Right side circle -->
             <div
                 class="h-[5vh] w-[5vh] rounded-full absolute z-[-1] right-0 top-1/2 -translate-x-1/2 -translate-y-1/2 select-none flex justify-center items-center overflow-hidden">
                 <div class="h-[150%] w-[60%] bg-white absolute z-[-1] translate-x-[35%] rotate-[-19deg]"></div>

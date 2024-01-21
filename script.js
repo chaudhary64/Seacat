@@ -5,7 +5,6 @@ let lc = document.querySelector(".Light_Container");
 let slider = document.querySelector(".Slider");
 let dots = document.querySelector(".Dots");
 
-
 Draggable.create(".lights", {
   type: "x",
   bounds: lc,
@@ -13,16 +12,12 @@ Draggable.create(".lights", {
   onDragEnd: function () {
     let lightscoordinate = lights.getBoundingClientRect();
     console.log(lightscoordinate.left);
-    if(lightscoordinate.left == 883.75) {
-        v2.style.opacity = 1;
-        console.log('yaay')
-    }
-    else {
-        v2.style.opacity = 0;
-        console.log('naay')
+    if (lightscoordinate.left >= 880.35) {
+      v2.style.opacity = 1;
+      console.log("yaay");
+    } else {
+      v2.style.opacity = 0;
+      console.log("naay");
     }
   },
 });
-
-
-
